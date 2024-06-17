@@ -9,6 +9,19 @@ Projekt symulujący Turniej Axelroda dla co najmniej 6 różnych strategii w ite
 - JavaScript
 - CSS
 
+## Architektura i narzędzia
+
+### a. Generatory komponentów
+W projekcie zastosowano komponenty Vue.js, które są podstawowymi blokami budującymi aplikację. Każdy komponent odpowiada za konkretną funkcjonalność lub część interfejsu użytkownika. Główne komponenty to:
+- `App.vue`: Główny komponent aplikacji, zarządzający strukturą aplikacji.
+- `ResultsTable.vue`: Komponent odpowiedzialny za wyświetlanie wyników turnieju.
+
+### b. Routery kierujące ruchem Http
+W projekcie nie użyto routera, ponieważ jest to prosta aplikacja jednowarstwowa. W bardziej rozbudowanych aplikacjach Vue Router jest używany do zarządzania nawigacją między różnymi widokami lub stronami aplikacji.
+
+### c. Szablony HTML
+Szablony HTML są zintegrowane bezpośrednio w komponentach Vue. Każdy komponent Vue używa składni szablonowej, aby definiować strukturę HTML dla tej części interfejsu użytkownika. Przykładowo, komponent `ResultsTable.vue` zawiera szablon do renderowania tabeli wyników.
+
 ## Struktura projektu
 turniej-axelroda/
 ├── src/
